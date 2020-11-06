@@ -1,0 +1,32 @@
+<div class="container users_new">
+
+<div class="top">
+<div class="bg-opacity">
+  <div class="top-logo">
+    <i class="fas fa-handshake"></i>
+    <h1>Studdy Buddy</h1>
+    <p>Studdy Buddyとは、<br>"在宅留学"を可能にするオンライン語学学習コミュニティです。<p>
+  </div>
+
+  <div class="btns">
+    <div class="btn signup">
+    <%= link_to("Sign up", "/signup") %>
+    </div>
+    <div class="btn login">
+    <%= link_to("Sign in", "/login") %>
+    </div>
+ </div>
+</div>
+
+    <div class="form_header"><h1>Sign in</h1></div>
+    <div class="form login-form">
+      <%= form_tag("/login") do %>
+        <p>email</p>
+        <input name="email">
+        <p>password</p>
+        <input name="password" type="password">
+        <br>
+        <input type="submit" value="Sign in" class="submit-btn">
+      <% end %>
+    </div>
+</div>

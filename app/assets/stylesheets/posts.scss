@@ -1,0 +1,97 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.user-info{
+    border-bottom: 2px solid dimgray;
+    
+    
+    
+    span{
+        font-weight: bold;
+        color: dimgray;
+        
+        p{
+            font-size: 18px;
+        }
+    }
+  }
+  
+  
+  .post_image{
+    width: 80%;
+  }
+  
+  
+  
+  .user-post-index-heading{
+    font-size: 24px;
+  }
+    .posts-index-item{
+      padding:20px;
+      margin: 10px auto;
+      background-color: rgba(255, 255, 255, 1);
+  .post-left{
+    float: left;
+  }
+  .post-content{
+   margin: 0;
+   font-size: 24px;
+  }
+  .clear{
+      clear: both;
+  }
+  
+  
+  .post-show-item{
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  
+  
+  .like-btn {
+    color: #aab6be;
+  }
+  
+  
+  .like-btn-unlike {
+    color: #ff2581;
+  }
+  
+  
+  .posts-show-item .fa {
+    font-size: 16px;
+    margin-right: 3px;
+  }
+  
+  
+  
+  .post-menus a, .post-menus input {
+    color: #8899a6;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  
+  
+  
+    .form-heading{
+      color: white;
+    }
+  
+  
+  
+    .user-icon{
+      border:1px solid  gray;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+          // box-shadow: 0 2px 6px #c1ced7;
+          // margin: 20px 0 10px;
+          // object-fit: cover;
+      
+    }
+    
+    
+  }

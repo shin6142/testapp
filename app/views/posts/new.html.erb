@@ -1,0 +1,19 @@
+<div class="main posts-new">
+  <div class="container">
+    <h1 class="form-heading">Post</h1>
+    <%= form_tag("/posts/create", {multipart: true}) do %>
+      <div class="form">
+        <div class="form-body">
+          <% @post.errors.full_messages.each do |message|%>
+            <%= message %>
+            <% end%>
+          
+          <textarea name="content"></textarea>
+          <br>
+          
+          <input class="submit-btn" value="post" type="submit">
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
