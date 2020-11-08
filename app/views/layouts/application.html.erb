@@ -44,7 +44,16 @@
             <% end%>
           </li>
         <% else %>
-          
+          <li>
+            <%= link_to("/posts/index") do%>
+              <span class="fas fa-comments"></span>
+            <%end%>
+          </li>
+          <li>
+            <%= link_to("/users/index") do %>
+              <span class="fas fa-users"></span>
+              <% end%>
+          </li>
           <li>
             <%= link_to("/signup") do%>
              <span class="fas fa-user-plus"></span>

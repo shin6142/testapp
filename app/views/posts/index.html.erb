@@ -1,5 +1,13 @@
 <div class="main posts-index">
   <div class="container">
+
+
+  <div class="users-heading">
+    <p>~参加者の声~</p>
+    <h1>Buddies Voices</h1>
+    </div>
+
+
     <% @posts.each do |post| %>
       <div class="posts-index-item">
 
@@ -15,6 +23,9 @@
           <div class="post-content">
           <%= link_to(post.content, "/posts/#{post.id}") %>
           </div>
+          <div class="post-created_at">
+          <%= post.created_at %>
+        </div>
         </div>
 
         <div class="clear"></div>

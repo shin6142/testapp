@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user
+  before_action :authenticate_user, {only: [:new, :create, :edit, :update, :destroy]}
   before_action :ensure_correct_user, {only: [:edit, :update, :destroy]}
   
   def index
@@ -20,9 +20,7 @@ class PostsController < ApplicationController
     @post = Post.new(
       content: params[:content],
       user_id: @current_user.id
-    )
-
-   
+      )
 
     if @post.save
       flash[:notice] = "投稿を作成しました"
@@ -31,6 +29,8 @@ class PostsController < ApplicationController
       render("posts/new")
     end
   end
+
+  
   
   def edit
     @post = Post.find_by(id: params[:id])

@@ -1,6 +1,11 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.main{
+  margin-top:100px;
+}
+
+
 .user-info{
     border-bottom: 2px solid dimgray;
     
@@ -37,6 +42,12 @@
    margin: 0;
    font-size: 24px;
   }
+  .post-created_at{
+    color: black;
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
   .clear{
       clear: both;
   }

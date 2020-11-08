@@ -6,12 +6,16 @@ body{
 a{
     list-style: none;
     text-decoration: none;
+    color: black;
 }
 
 li{
     list-style: none;
 }
 
+.main{
+    margin-top:100px;
+}
 
 header{
     position: fixed;            /* ヘッダーの固定 */
@@ -22,7 +26,7 @@ header{
     height: 60px;
     font-weight: 600;
     a{
-        color: white;
+        color: rgba(0, 0, 0, 0.514);
     }
     
     .header-logo{
@@ -51,7 +55,7 @@ header{
 .container{
     width: 100%;
     margin: auto;
-    margin-top: 200px;
+    // margin-top: 200px;
     text-align: center;
 
     .top{
@@ -86,28 +90,133 @@ header{
         }
          .btns{
             position: relative;
-            top:400px;
-            width:20%;
+            top:360px;
+            width:50%;
             margin: 0 auto;
-            .btn{
-                height: 40px;
-                font-size:30px;
-                text-decoration: none;
-                margin: 24px 24px;
-                
-                background-color: rgba(255, 255, 255, 0.8);
-                a{
-                 color: gray;
-                }
-                a:hover{
-                    color: black;
-                }
-            }
+            display: flex;
          }
 
 
       }
     }
+
+    .members{
+        padding: 40px;
+        text-align-last: center;
+        .profile{
+          img{
+            width: 10%;
+            border-radius: 50%;
+            border: 2px solid gray;
+          }
+        }
+        .profile-text{
+          width: 50%;
+          margin: 20px auto;
+          h4{
+            margin-bottom: 20px;
+          }
+        }
+      
+        .contact{
+          margin-top: 40px;
+          margin-bottom: 100px;
+          h4{
+            width: 20%;
+            margin: 0 auto;
+            border-bottom: 1px solid dimgray;
+          }
+        }
+
+        
+
+
+    }
+
+
+
+
+     .feature{
+        background-color: white;
+        text-align: center;
+        padding-top: 80px;
+          .heading{
+        // padding-top: 30px;
+            // margin-bottom: 60px;
+            // border-bottom: 2px solid darkorange;
+            p{
+             margin-top: 0;
+              margin-bottom: 0;
+            }
+            h2{
+              margin-top:0;
+            }
+          }
+          .feature-items{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px;
+            .feature-item{
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 30px;
+              width: 30%;
+                i{
+                  font-size: 30px;
+                  color: #222222;
+                  margin-bottom: 10px;
+                }
+                h4{
+                  border-bottom: 2px solid orange;
+                  width: 50%;
+                  margin: 0 auto;
+      
+                }
+              .feature-item-text{
+                width: 70%;
+                margin: 10px auto;
+      
+              }
+            }
+          }
+        
+      }
+        
+
+      .buddies{
+        background-color: white;
+        padding-top: 80px;
+        .buddy-list{
+            display: flex;
+            flex-wrap: wrap;
+            .buddy-list-item{
+                width: 30%;
+                margin: 40px auto
+               
+            }
+        }
+
+
+      
+        }
+}
+ 
+
+.buddy-icon{
+    border-radius: 50%;
+      width: 40%;
+      border: 2px solid gray;
+}
+
+.nationallity{
+    width: 10%;
+}
+
+.heading{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-bottom: 2px solid darkorange;
 }
 
 textarea{
@@ -130,4 +239,18 @@ input{
     margin-top: 60px;
     height: 50px;
     width: 20%;
+}
+
+.btn{
+    width: 30%;
+    font-size: 26px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: rgba(248, 248, 248, 0.705);
+    padding: 16px;
+    color: black;
+    btn:hover{
+        color: orange ;
+    }
+
 }

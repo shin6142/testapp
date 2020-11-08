@@ -6,15 +6,106 @@
           <h1>Studdy Buddy</h1>
           <p>Studdy Buddyとは、<br>"在宅留学"を可能にするオンライン語学学習コミュニティです。<p>
         </div>
-      <div class="btns">
-        <div class="btn signup">
-        <%= link_to("Sign up", "/signup") %>
-        </div>
-        <div class="btn login">
-        <%= link_to("Sign in", "/login") %>
-        </div>
+       <div class="btns">
+          <div class="btn signup">
+            <%= link_to("/signup") do %>
+            Sign up <span class="fas fa-user-plus"></span>
+            <% end%>
+          </div>
+          <div class="btn login">
+           <%= link_to("/login") do%>
+           Sign in <span class="fas fa-sign-in-alt"></span>
+           <% end %>
+          </div>
+       </div>
       </div>
+      
+
+
+      <div class="members section">
+        
+          <div class="heading">
+            <p>~What is Studdy Buddy?~</p>
+            <h1>Studdy Buddy とは</h1>
+        </div>
+        <div class="profile">
+          <img class="profile-icon" src="img/shin.jpg">
+          <h4>Founder: Shin</h4>
+          <p>名古屋外国語大学</p>
+        </div>
+
+        <div class="profile-text">
+          <h4>”もっと英語を話したい！”を実現するコミュニティ。</h4>
+          <p>”在宅留学”を実現するコミュニティ。
+          新型コロナウイルスの影響で、対面授業や海外留学も中止となり、本当はあるはずだった英語を話す機会が激減しました。このような状況下でも ”英語を使い続けていたい”という高い意識を持った生徒はたくさんいると思います。 そのような共通の目的を持った生徒をつなげる場を作りたいという思いから、Studdy Buddyを開設しました。         
+          留学先で知り合った現地の学生や、日本の友人に参加の協力を訪ねスタートさせました。
+          現在、友達から友達へこの活動がつたわり、参加者の和を広げています。
+          </p>
+        </div>
+
+       
+            <%= link_to("/signup") do %>
+              <div class="btn signup">
+            Sign up <span class="fas fa-user-plus"></span>
+             </div>
+            <% end%>
+          
+
       </div>
+
+      <div class="feature section">
+          <div class="heading">
+            <p>~Our Features~</p>
+            <h1>Studdy Buddyの特徴</h1>
+          </div>
+          <ul class="feature-items">
+            <li class="feature-item"><i class="fas fa-clock"></i><p>Anytime</p><h4>いつでも</h4><div class="feature-item-text"><p>毎週何曜日、何時からといった決まりはありません。全てはあなたとあなたのバディ次第。バディとコミュニケーションをとって、アポイントメントを取ろう。</p></div></li>
+            <li class="feature-item"><i class="fas fa-stopwatch"></i><p>Anyhow</p><h4>好きなだけ</h4><div class="feature-item-text"><p>時間制限や、回数制限はありません。好きなことを好きなだけ、バディたちとの会話でシェアしよう。</p></div></li>
+            <li class="feature-item"><i class="fas fa-wallet"></i><p>No Menbership Fee</p><h4>完全無料</h4><div class="feature-item-text"><p>オンラインスクールの様に講師がレッスンを提供するのではなく、あなたとあなたのバディが価値を提供し合う学習コミュニティです。</p></div></li>
+            <li class="feature-item"><i class="fas fa-language"></i><p>Any Language</p><h4>好きな言語を</h4><div class="feature-item-text"><p>同じ言語を勉強している仲間、あなたの学習したい言語を得意とするバディを探してお互いにレベルアップしよう。</p></div></li>
+            <li class="feature-item"><i class="fas fa-comments"></i><p>Casual Talk</p><h4>自然な会話を</h4><div class="feature-item-text"><p>テキストはありません。趣味のこと、勉強のこと、仕事のことなど、トピックはあなた次第。教室での会話ではなく、自然な会話を楽しもう。</p></div></li>
+            <li class="feature-item"><i class="fas fa-hands-helping"></i><p>Be friends</p><h4>生徒ではなく、友達に</h4><div class="feature-item-text"><p>先生はいません。学習仲間(バディ)を見つけてお互いを高め合おう。</p></div></li>
+
+          </ul>
+      </div>
+
+      <div class="buddies section">
+        
+          <div class="heading">
+            <p>~参加者紹介~</p>
+            <h1>Our Buddies</h1>
+          </div>
+          <ul class="buddy-list">
+            <li class="buddy-list-item"><img class="buddy-icon" src="img/iori.jpg"><h4 class="buddy-name">Iori</h4><img class="nationallity" src="img/japan.jpg"><p>Hi, I’m Iori. I am a university student. I love traveling, reading books and coffee 💖
+              I always think that I want to try something new and interesting, and I’m happy to share my experience and my thoughts 🥰
+              I hope I to meet a lot of new people though Study Buddy👀
+              Thanks!!</p></li>
+            <li class="buddy-list-item"><img class="buddy-icon" src="img/amy.jpg"><h4 class="buddy-name">Amy</h4><img class="nationallity" src="img/korea.jpg"><p>Hi, my name is Amy. I live in Korea, Gwangju. I am currently majoring in Veterinary Science.  I like traveling, and that's why I want to meet new friends!.😊</p></li>
+            <li class="buddy-list-item"><img class="buddy-icon" src="img/isai.jpg"><h4 class="buddy-name">Isai</h4><img class="nationallity" src="img/usa.jpg"><p>Hello, my name is Isai. I am a college student with the desire to finish a degree in Criminal justice. My experiences traveling to foreign countries has allowed me to meet new people and experience different cultures. I am glad to have friends around the world!</p></li>
+            <li class="buddy-list-item"><img class="buddy-icon" src="img/sara.jpg"><h4 class="buddy-name">Sara</h4><img class="nationallity" src="img/usa.jpg"><p>I'm Sara. I lived in Japan for about 6 years and can speak Japanese. I like art, riding my motorcycle, listening to music and spending time with my friends and family.</p></li>
+            <li class="buddy-list-item"><img class="buddy-icon" src="img/nora.jpg"><h4 class="buddy-name">Nora</h4><img class="nationallity" src="img/germany.jpg"><p>Hi, I am Nora from Germany, studying Pedagogy and Management in Social Work. Growing up on an organic farm has made me feel particularly at home in the nature and I am fascinated by people who are just as curious about all the exciting things that surround! That’s why I can usually be found where there is nature: hiking, climbing, cycling, along rivers and lakes, with animals or where there are people: dancing, singing, soccer, beach volleyball, playing piano and traveling. According to the simple motto: explore the diversity of the earth and the people and you discover yourself - looking for the way in which humans and nature can live together peacefully.</p></li>
+            <li class="buddy-list-item"><img class="buddy-icon" src="img/lidia.jpg"><h4 class="buddy-name">Lidia</h4><img class="nationallity" src="img/spain.jpg"><p>Hi, I'm Lidia from Spain,  a 21 years old University student who loves traveling, hiking in the nature, climbing  and scuba diving. I am always open to meet new people and make cool plans with them, so this Studdy Buddy website is a really good choice to share my experiences with you guys!</p></li>
+           
+            </ul>
+
+
+            
+            <%= link_to("/users/index") do %>
+              <div class="btn"> 
+              See more Buddies <span class="fas fa-users"></span>
+              </div>
+            <% end%>
+          
+        
+      </div>
+
+      
+
+
+
+
+
+
 
 
     </div>
