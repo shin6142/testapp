@@ -1,0 +1,24 @@
+<div class="box">
+<div class="box-inner">
+<div class="post-form">
+    <%= form_with model: @post, local: true do |f|%>
+
+
+    <div class="box-Image">
+    <%= f.label :Image %><br>
+    <%= f.file_field :images, multiple: true %><br>
+    </div>
+
+
+
+    <div class="box-comment">
+     <%= f.label :Comment %><br>
+     <%= f.text_area :content %>
+    </div>
+    
+     <%= f.submit %>
+    <% end %>
+</div>
+</div>
+</div>
+

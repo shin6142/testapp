@@ -1,0 +1,85 @@
+#home-about{
+
+.nationallity{
+    width: 10%;
+  }
+
+.steps{
+    display:flex;
+    .step{
+        width: 30%;
+       flex: auto;
+        .btn{
+            width: 80%;
+            font-size: 26px;
+            margin: 0 auto;
+            border-radius: 30px;
+            background-color: rgba(248, 248, 248, 0.705);
+            padding: 16px;
+            color: black;
+            :hover{
+                color: orange;
+            }
+            h3,h4{
+                margin: 0;
+            }
+        }
+    }
+}
+
+.members{
+    padding: 40px;
+    text-align-last: center;
+    .profile{
+      img{
+        width: 10%;
+        border-radius: 50%;
+        border: 2px solid gray;
+      }
+    }
+    .profile-text{
+      width: 50%;
+      margin: 20px auto;
+      h4{
+        margin-bottom: 20px;
+      }
+    }
+  
+    .contact{
+      margin-top: 40px;
+      margin-bottom: 100px;
+      h4{
+        width: 20%;
+        margin: 0 auto;
+        border-bottom: 1px solid dimgray;
+      }
+    }
+
+    .btns{
+        width:30%;
+        margin: 0 auto;
+        .btn{
+            width:100%;
+        }
+    }
+
+    
+
+
+}
+
+
+
+
+.profile{
+    margin: 40px;
+}
+
+.section{
+    margin: 40px auto;
+}
+
+
+
+
+}

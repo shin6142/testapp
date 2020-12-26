@@ -1,0 +1,123 @@
+<header>
+
+<div class ="header-pc">
+<div class="header-logo">
+  <% if @current_user %>
+    <%= link_to("Studdy Buddy", "/") %>
+  <% else %>
+    <%= link_to("Studdy Buddy", "/") %>
+  <% end %>
+</div>
+
+
+<ul class="header-menus">
+
+  <% if user_signed_in? %>
+    
+    <li>
+    <%= link_to new_post_path do%>
+        <span class="fas fa-comments"></span>
+      <%end%>
+    </li>
+    <li>
+    <%= link_to profile_path(current_user.id) do %>
+        <span class="fas fa-user"></span>
+      <%end%>
+    </li>
+
+    <li>
+      <%= link_to destroy_user_session_path, :method => :get, remote: true  do %>
+      <span class="fas fa-sign-out-alt"><span>
+      <% end%>
+    </li>
+
+  <% else %>
+
+    <li>
+      <%= link_to new_user_registration_path do%>
+      <span class="fas fa-user-plus"></span>
+      <% end%>
+    </li>
+
+    <li>
+      <%= link_to new_user_session_path do%>
+      <span class="fas fa-sign-in-alt"></span>
+      <% end%>
+     </li>
+
+   <% end %>
+
+
+
+
+    
+</ul>
+
+<div class="clear"></div>
+  
+</div>
+
+
+
+<div class ="header-mobile">
+  <div class="header-logo">
+    <% if @current_user %>
+      <%= link_to("SB", "/") %>
+    <% else %>
+      <%= link_to("SB", "/") %>
+    <% end %>
+  </div>
+
+  <ul class="header-menus">
+
+  <% if user_signed_in? %>
+    
+    <li>
+    <%= link_to new_post_path do%>
+        <span class="fas fa-comments"></span>
+      <%end%>
+    </li>
+    <li>
+      <%= link_to new_profile_path do%>
+        <span class="fas fa-user"></span>
+      <%end%>
+    </li>
+
+    <li>
+      <%= link_to destroy_user_session_path, :method => :get, remote: true  do %>
+      <span class="fas fa-sign-out-alt"><span>
+      <% end%>
+    </li>
+
+  <% else %>
+
+    <li>
+      <%= link_to new_user_registration_path do%>
+      <span class="fas fa-user-plus"></span>
+      <% end%>
+    </li>
+
+    <li>
+      <%= link_to new_user_session_path do%>
+      <span class="fas fa-sign-in-alt"></span>
+      <% end%>
+     </li>
+
+   <% end %>
+
+
+
+
+    
+</ul>
+
+<div class="clear"></div>
+
+
+ 
+
+</div>
+
+</header>
+
+

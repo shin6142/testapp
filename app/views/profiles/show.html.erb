@@ -1,0 +1,128 @@
+
+
+
+<div class="container">
+
+
+<div class="top">
+  <div class="bg-opacity">
+    
+    
+<div class="profile">
+
+      
+
+  <div class="profile-icon">
+    <%= image_tag @profile.image %>
+  </div>
+
+  <% if @profile.user == current_user%>
+      <div class="btn to-mypage">
+         <%= link_to edit_profile_path(@profile.id) do %>
+            Edit My Profile
+         <% end %>
+      </div>
+  <% end %>
+
+  <div class="profile-below">
+    <h1><%= @profile.name %></h1>
+    <h2>From <%= @profile.nationallity %></h2>
+    <p><%= @profile.text %></p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+   <div class="heading"> 
+      <p>〜過去の投稿〜</p>
+      <h1>Posts by <%= @profile.name %></h1>
+   </div>
+
+
+<div class="posts">
+   <% @posts.each do |post| %>
+   <div class="post">
+   
+    
+
+
+      <div class="post-user">
+        <% if post.user.image.attached? %>
+          <div class="icon">
+          <%= link_to profile_path(post.user.id) do%>
+          <%= image_tag post.user.image %>
+          <% end %>
+          </div>
+         <% else %>
+         <div class="icon">
+         <%= link_to profile_path(post.user.id) do%>
+         <%= image_tag "nouser.jpg"%>
+         <% end %>
+        </div>
+        <% end %>
+
+        <div class="post-user-name">
+        <%= link_to profile_path(post.id) do%>
+          <h3><%= post.user.name %></h3>
+          <% end %>
+        </div>
+          <div class="post-user-name">
+          <%= link_to profile_path(post.id) do%>
+          <h4>(<%= post.user.nationallity %>)</h4>
+          <% end %>
+          </div>
+      </div>
+
+    
+
+       <% if post.images.attached? %>
+         <div class="post-image">
+         <%= link_to post_path(post.id) do %>
+           <% post.images.each do |image| %>
+            <%= image_tag image%>
+           <% end %>
+        <% end %>
+         </div>
+       <%end%>
+       
+     
+
+      <div class ="post-below">
+      <%= link_to post_path(post.id) do %>
+        <div class="post-time">
+          <p><%= post.created_at %></p>
+        </div>
+        <div class="post-text">
+          <p><%= post.content %></p>
+        </div>
+        <% end %>
+      </div>
+
+     
+
+
+    
+    
+
+    </div> 
+    <% end %>
+ </div>
+
+</div>

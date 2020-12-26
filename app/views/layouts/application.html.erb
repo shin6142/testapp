@@ -1,82 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Studdy Buddy</title>
+    <title>App</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= csp_meta_tag %>
+   
+    
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
 
-  <body>
-    <header>
-      <div class="header-logo">
-        <% if @current_user %>
-          <%= link_to("Studdy Buddy", "/posts/index") %>
-        <% else %>
-          <%= link_to("Studdy Buddy", "/") %>
-        <% end %>
-      </div>
-      <ul class="header-menus">
-        <% if @current_user %>
-          <li>
-            <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
-          </li>
-          <li>
-            <%= link_to("/posts/index") do%>
-              <span class="fas fa-comments"></span>
-            <%end%>
-          </li>
-          <li>
-            <%= link_to("/posts/new") do %>
-              <span class="fas fa-comment-dots"></span>
-              <%end%>
-          </li>
-          <li>
-            <%= link_to("/users/index") do %>
-              <span class="fas fa-users"></span>
-              <% end%>
-          </li>
-          <li>
-            <%= link_to("/logout", {method: :post}) do %>
-            <span class="fas fa-sign-out-alt"><span>
-            <% end%>
-          </li>
-        <% else %>
-          <li>
-            <%= link_to("/posts/index") do%>
-              <span class="fas fa-comments"></span>
-            <%end%>
-          </li>
-          <li>
-            <%= link_to("/users/index") do %>
-              <span class="fas fa-users"></span>
-              <% end%>
-          </li>
-          <li>
-            <%= link_to("/signup") do%>
-             <span class="fas fa-user-plus"></span>
-            <% end%>
-          </li>
-          <li>
-            <%= link_to("/login") do%>
-              <span class="fas fa-sign-in-alt"></span>
-              <% end%>
-          </li>
-        <% end %>
-      </ul>
-
-      <div class="clear">
-      </div>
-    </header>
-
-    <% if flash[:notice] %>
-      <div class="flash">
-        <%= flash[:notice] %>
-      </div>
-    <% end %>
-    
+  <body id="<%= controller.controller_name %>-<%= controller.action_name %>">
+  <%= render 'shared/header'%>
+  <%= render 'shared/toast'%>
     <%= yield %>
+ 
   </body>
 </html>

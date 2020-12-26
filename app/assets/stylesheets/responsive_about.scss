@@ -1,0 +1,181 @@
+@media  (max-width: 670px){
+
+    #home-about{
+        .heading{
+                width: 100%;
+        }
+
+        .members{
+            padding: 40px;
+            text-align-last: center;
+            .profile{
+              img{
+                width: 40%;
+                border-radius: 50%;
+                border: 2px solid gray;
+              }
+            }
+            .profile-text{
+              width: 100%;
+              margin: 20px auto;
+              h4{
+                margin-bottom: 20px;
+              }
+            }
+          
+            .contact{
+              margin-top: 40px;
+              margin-bottom: 100px;
+              h4{
+                width: 20%;
+                margin: 0 auto;
+                border-bottom: 1px solid dimgray;
+              }
+            }
+    
+            .btns{
+              width:100%;
+              margin: 0 auto;
+              .btn{
+                  width:100%;
+              }
+          }
+    
+    
+        }
+
+        .nationallity{
+            width: 10%;
+          }
+        
+        .steps{
+            display:block;
+            .step{
+                width: 100%;
+               flex: auto;
+                .btn{
+                    width: 80%;
+                    font-size: 16px;
+                    margin: 0 auto;
+                    border-radius: 30px;
+                    background-color: rgba(248, 248, 248, 0.705);
+                    padding: 16px;
+                    color: black;
+                    :hover{
+                        color: orange;
+                    }
+                    h3,h4{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+          
+        
+        
+     .feature{
+        background-color: white;
+        text-align: center;
+        padding-top: 40px;
+       .heading{
+           width: 90%;
+       }
+          .feature-items{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px;
+            margin-top: 20px;
+            .feature-item{
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 30px;
+              width: 100%;
+                i{
+                  font-size: 30px;
+                  color: #222222;
+                  margin-bottom: 10px;
+                }
+                h4{
+                  border-bottom: 2px solid orange;
+                  width: 50%;
+                  margin: 0 auto;
+      
+                }
+              .feature-item-text{
+                width: 70%;
+                margin: 10px auto;
+      
+              }
+            }
+          }
+        
+      }
+
+
+
+      .buddies{
+        width: 80%;
+        margin: 0 auto;
+        background-color: white;
+        padding-top: 80px;
+        .buddy-list{
+            display: flex;
+            flex-wrap: wrap;
+            .buddy-list-item{
+                width: 100%;
+                flex: auto;
+            }
+        }
+
+
+      
+      }
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+        
+            .btn{
+                width: 100%;
+                font-size: 20px;
+                margin: 0 auto;
+                border-radius: 30px;
+                background-color: rgba(248, 248, 248, 0.705);
+                padding: 8px;
+                color: black;
+                margin-bottom: 10px;
+                  :hover {
+                    color: orange;
+                  }
+                  
+                
+            
+            }
+        
+        
+        .profile{
+            margin: 40px;
+        }
+        
+        .section{
+            margin: 10px auto;
+        }
+        
+        
+        
+        
+    }
+    
+}
+
+

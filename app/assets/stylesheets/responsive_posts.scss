@@ -1,0 +1,54 @@
+@media  (max-width: 670px){
+   
+    #posts-new, #posts-create, #posts-update, #posts-edit{
+
+        
+        
+        .box{
+          width: 90%;
+          height: 100%;
+          margin: 40px auto;
+        }
+        
+        
+        
+        
+        
+        
+        .post-form{
+          width: 90%;
+          margin: 0 auto;
+        
+          textarea{
+            min-width: 100%;
+            min-height: 200px;
+            margin-bottom: 40px;
+            margin: 20 auto;
+          }
+          input{
+            padding: 5px;
+            height: 30px;
+            font-size: 16px;
+            width: 60%;
+            margin: 20px auto;
+        }
+        
+        label{
+          font-weight: 700;
+            font-size: 13px;
+            padding-left: 2px;
+            padding-bottom: 2px;
+        }
+        
+          .submit-btn{
+            color: gray;
+            font-size: 30px;
+            border: 1px solid gray;
+            margin-top: 60px;
+            height: 50px;
+        }
+        
+        }
+        }
+
+}

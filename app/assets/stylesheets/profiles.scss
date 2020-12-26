@@ -1,0 +1,109 @@
+// Place all the styles related to the profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+#profiles-new, #profiles-edit, #profiles-create, #profiles-update{
+    
+
+
+.box{
+    width: 350px;
+    height: 100%;
+    margin: 60px auto 0;
+    border-radius: 4px;
+    border: 1px #ddd solid;
+
+
+    img{     
+        width:40%;
+         border-radius: 50%;
+         border: 2px solid gray;
+         text-align: center;
+
+       }
+
+}
+
+    .form-group{
+        margin: 10px 0;
+        label{
+            font-weight: 700;
+            font-size: 13px;
+            padding-left: 2px;
+            padding-bottom: 2px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="text"]{
+            border-style: none;
+            box-sizing: border-box;
+            width: 100%;
+            height: 30px;
+            border: 1px solid #a6a6a6;
+            box-shadow: 0 1px 0 rgba(0,0,0,.07) inset;
+            border-radius: 3px;
+            padding: 0 7px;
+            
+        }
+
+        textarea{
+            border-style: none;
+            box-sizing: border-box;
+            min-height: 100px;
+            width: 100%;
+            border: 1px solid #a6a6a6;
+            box-shadow: 0 1px 0 rgba(0,0,0,.07) inset;
+            border-radius: 3px;
+            padding: 0 7px;
+        }
+    
+    }
+
+    
+    
+
+    
+
+    
+}
+
+
+#profiles-show{
+    .top{
+        background-image: url(../img/profile-top.jpg);
+        .profile{
+            position: relative;
+            top:240px;
+            width:30%;
+            margin: 0 auto;
+            .profile-icon{
+                width:100%;
+                img{
+                    width: 50%;
+                    border-radius: 50%;
+                    border: 2px solid gray;
+                }
+            }
+            .to-mypage{
+                margin-top: 10px;
+                display: inline-block;
+                padding: 0.5em 1em;
+                text-decoration: none;
+                background: #f7f7f7;
+                border-left: solid 6px #ff7c5c;/*左線*/
+                color: #ff7c5c;/*文字色*/
+                font-weight: bold;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+            }
+            .profile-below{
+                width:100%;
+                font-weight: bold;
+                h1{
+                    margin-top:20px;
+                }
+                h2{
+                    margin-bottom:20px;
+                }
+            }
+        }
+    }
+}

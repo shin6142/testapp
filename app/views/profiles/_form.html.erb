@@ -1,0 +1,41 @@
+
+
+<div class="box">
+<div class="box-inner">
+<%= form_with model: @profile, local: true do |f| %>
+    
+  <div class="introduction">
+  <%= f.label :Icon %> <br>
+  <%= f.file_field :image %>
+  </div>
+
+  <% if f.object.image.attached?%>
+  <div class="image-preview">
+    <%= image_tag f.object.image %>
+  </div>
+<%end%>
+  
+    <div class="form-group">
+    <%= f.label :Name %> <br>
+    <%= f.text_field :name %>
+    </div>
+
+    <div class="form-group">
+    <%= f.label :Country %> <br>
+    <%= f.text_field :nationallity %>
+    </div>
+
+    <div class="form-group">
+    <%= f.label :Introduction %> <br>
+    <%= f.text_area :text %>
+    </div>
+
+   
+
+    
+  
+
+    <%= f.submit %>
+<% end %>
+</div>
+  </div>

@@ -1,27 +1,14 @@
+
+
+
 <div class="main posts-new">
-  <div class="container">
-  <div class="users-heading">
-  <p>~参加後の感想を投稿をおねがいします~</p>
-  <h1>Share your feedback!</h1>
-  </div>
-    <%= form_tag("/posts/create", {multipart: true}) do %>
+ <div class="container">
+    <div class="heading">
+      <p>~参加後の感想を投稿をおねがいします~</p>
+      <h1>Share your feedback!</h1>
+    </div>
+    
+    <%= render 'form' %>
 
-      
-
-
-      <div class="form">
-        <div class="form-body">
-          <% @post.errors.full_messages.each do |message|%>
-            <%= message %>
-            <% end%>
-          
-          
-          <textarea name="content"></textarea>
-          <br>
-          
-          <input class="submit-btn" value="post" type="submit">
-        </div>
-      </div>
-    <% end %>
-  </div>
+ </div>
 </div>
