@@ -7,21 +7,26 @@
           <p>Studdy Buddyとは、<br>"在宅留学"を可能にするオンライン語学学習コミュニティです。<p>
         </div>
        <div class="btns">
+
+        <%= link_to new_user_registration_path do%>
           <div class="btn signup">
-          <%= link_to new_user_registration_path do%>
             Sign up <span class="fas fa-user-plus"></span>
-            <% end%>
           </div>
-          <div class="btn login">
+          <% end%>
+        
           <%= link_to new_user_session_path do%>
-           Sign in <span class="fas fa-sign-in-alt"></span>
-           <% end %>
-          </div>
+            <div class="btn login">
+             Sign in <span class="fas fa-sign-in-alt"></span>
+            </div>
+            <% end %>
+          
+          <%= link_to root_path do%>
           <div class="btn to-top">
           <%= link_to root_path do%>
            Top page<span class="fas fa-home"></span>
-           <% end %>
           </div>
+          <% end %>
+          
        </div>
       </div>
       

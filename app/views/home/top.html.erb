@@ -20,40 +20,40 @@
    <div class="btns">
 
    <% if user_signed_in? %>
-    
-   <div class="btn to-mypage">
-   <%= link_to new_post_path do%>
-   <h3>Post<span class="fas fa-comments"></span></h3>
-   <%end%>
-   </div>
 
+   <%= link_to new_post_path do%>
    <div class="btn to-mypage">
-   <%= link_to profile_path(current_user.id) do %>
-      <h3>My Page</h3>
-   <% end %>
+   <h3>Post<span class="fas fa-comments"></span></h3>
    </div>
+   <%end%>
+
+   <%= link_to profile_path(current_user.id) do %>
+   <div class="btn to-mypage">
+      <h3>My Page</h3>
+   </div>
+   <% end %>
 
 
      
     <% else %>
 
-      <div class="btn signup">
       <%= link_to new_user_registration_path do%>
+      <div class="btn signup">
         Sign up <span class="fas fa-user-plus"></span>
-        <% end%>
       </div>
+      <% end%>
 
-      <div class="btn login">
       <%= link_to new_user_session_path do%>
+      <div class="btn login">
        Sign in <span class="fas fa-sign-in-alt"></span>
-       <% end %>
       </div>
-
-      <div class="btn to-about">
-      <%= link_to("/home/about") do%>
-      初めてのかたはこちら <span class="fas fa-sign-in-alt"></span>
       <% end %>
+
+      <%= link_to("/home/about") do%>
+      <div class="btn to-about">
+      初めてのかたはこちら <span class="fas fa-sign-in-alt"></span>
       </div>
+      <% end %>
 
    <% end %>
    </div>

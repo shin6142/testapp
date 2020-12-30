@@ -4,7 +4,7 @@
 <div class="box-inner">
 <%= form_with model: @profile, local: true do |f| %>
     
-  <div class="introduction">
+  <div class="Icon">
   <%= f.label :Icon %> <br>
   <%= f.file_field :image %>
   </div>
@@ -34,8 +34,9 @@
 
     
   
-
+    <div class="profile-submit-btn">
     <%= f.submit %>
+    </div>
 <% end %>
 </div>
   </div>

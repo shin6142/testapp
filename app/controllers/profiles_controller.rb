@@ -4,7 +4,7 @@ class ProfilesController < ApplicationController
 
    
     def show
-        @posts = Post.where(id: @profile.user_id)
+        @posts = Post.where(user_id: @profile.user_id)
         @Comments = Comment.where(id: @profile.user_id)
 
     end
