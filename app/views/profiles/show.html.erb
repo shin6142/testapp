@@ -105,7 +105,7 @@
      
 
       <div class ="post-below">
-      <%= link_to post_path(post.id) do %>
+       <%= link_to post_path(post.id) do %>
         <div class="post-time">
           <p><%= post.created_at %></p>
         </div>
@@ -114,6 +114,12 @@
         </div>
         <% end %>
       </div>
+
+      <div class="to-posts-show">
+        <%= link_to post_path(post.id) do%>
+          See more & Comment 
+        <% end%>
+      </div> 
 
      
 
