@@ -80,6 +80,43 @@
 }
 
 
+.buddies-about{
+  width: 80%;
+  margin:0 auto;
+  background-color: white;
+  padding-top: 80px;
+  .buddy-list{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      margin: 0 auto;
+      .buddy-list-item{
+        margin: 0 auto;
+          width: 20%;
+          margin-right: 100px;
+          .buddy-icon{
+            border-radius: 50%;
+              border: 2px solid gray;
+              img{
+                width: 20%;
+              }
+        }
+        
+      }
+  }
+
+
+
+}
+
+
+
+
+.buddy-icon{
+  border-radius: 50%;
+    width: 50%;
+    border: 2px solid gray;
+}
 
 
 }

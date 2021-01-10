@@ -48,16 +48,18 @@
 
       <div class="comments">
         <h4>Buddies' Comments</h4>
-        <% @comments.each do |c| %>
-          <div class="comment">
-            <div class="icon">
-              <%= link_to profile_path(c.user_id) do%>
-              <%= image_tag c.user.profile.image %>
-              <% end %>
+        <% if @comments %>
+          <% @comments.each do |c| %>
+            <div class="comment">
+              <div class="icon">
+                <%= link_to profile_path(c.user_id) do%>
+                <%= image_tag c.user.profile.image %>
+                <% end %>
+              </div>
+              <p><%= c.content %></p>
+            
             </div>
-            <p><%= c.content %></p>
-           
-          </div>
+          <% end %>
         <% end %>
      </div>
 
