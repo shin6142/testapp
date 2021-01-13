@@ -2,6 +2,7 @@ class PostsController < ApplicationController
     before_action :authenticate_user!, only: [:new, :create, :update, :destroy]
     before_action :find_post, only: [:show, :edit, :update, :destroy]
     before_action :force_redirect_unless_my_post, only: [:edit, :update, :destroy]
+    protect_from_forgery :except => [:destroy]
 def index
     @posts = Post.all.order(created_at: :desc)
     
@@ -32,7 +33,7 @@ end
 
 def update
     if @post.update(post_params)
-        redirect_to _path, notice: "Your ppst is updated!:)"
+        redirect_to root_path, notice: "Your post is updated!:)"
     else
         render :edit
     end

@@ -78,7 +78,7 @@
       <%end%>
     </li>
     <li>
-      <%= link_to new_profile_path do%>
+      <%= link_to profile_path(current_user.id) do%>
         <span class="fas fa-user"></span>
       <%end%>
     </li>

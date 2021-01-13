@@ -109,7 +109,7 @@
         <% end %>
 
         <div class="post-user-name">
-        <%= link_to profile_path(post.id) do%>
+        <%= link_to profile_path(post.user.id) do%>
           <h3><%= post.user.name %></h3>
           <% end %>
         </div>
@@ -154,24 +154,6 @@
  </div>
 
 
- <div class ="heading">
-   <h1>Meet Our Buddies</h1>
- </div>
- 
- <div class="top-buddies">
-      <ul class="buddy-list">
-      <% @profiles.each do |profile| %>
-        <li class="buddy-list-item">
-          <%= link_to profile_path(profile.id) do %>
-            <%= image_tag profile.image, class:"buddy-icon" if profile.image.attached?%>
-            <h4 class="buddy-name"><%= profile.name %></h4>
-            <h4 class="buddy-name">(<%= profile.nationallity %>)</h4>
-          <% end %>
-        </li>
-      <% end%>
-      </ul>       
-  </div>
- 
 
 
 

@@ -117,8 +117,8 @@
 
 
 
-      .buddies{
-        width: 80%;
+      .buddies-about{
+        width: 90%;
         margin: 0 auto;
         background-color: white;
         padding-top: 80px;
@@ -126,8 +126,14 @@
             display: flex;
             flex-wrap: wrap;
             .buddy-list-item{
+               margin:20px auto;
                 width: 100%;
                 flex: auto;
+
+                .buddy-icon{
+                  width: 50%;
+                  margin: 0 auto;
+                }
             }
         }
 

@@ -1,0 +1,38 @@
+<div class="container">
+
+<div class="comments-show">
+
+
+<div class="comment">
+    <div class="icon">
+    <%= link_to profile_path(@comment.user_id) do%>
+    <%= image_tag @comment.user.profile.image %>
+    <% end %>
+    </div>
+
+
+    <div class="comment-content">
+    <p><%= @comment.content %></p>
+    </div>
+
+
+</div>
+
+<div class="comment-below">
+
+        <h3>Are you sure to delete this comment?/この投稿を削除しますか?</h3>
+        <ul>
+        <li>
+        　<%= button_to post_comment_path(@comment.id), class: "btn delete-submit", method: :delete do %>
+        　　<span class="fas fa-trash-alt"></span>Yes
+        　<% end %>
+        </li>
+        <li>
+         <%= link_to :back, class: "btn back" do %>
+           <span class="fas fa-undo-alt"></span>No
+         <% end %>
+        </li>
+        </ul>
+
+</div>
+</div>

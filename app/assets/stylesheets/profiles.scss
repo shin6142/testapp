@@ -18,7 +18,8 @@
          border-radius: 50%;
          border: 2px solid gray;
          text-align: center;
-
+         box-shadow: 0 0 3px 0 rgba(0,0,0,.12), 0 2px 3px 0 rgba(0,0,0,.22);
+         transition: .3s;
        }
 
 }
@@ -85,13 +86,13 @@
 
     .profile{
         position: relative;
-        top:180px;
+        top:120px;
         width:50%;
         margin: 0 auto;
         .profile-icon{
             width:100%;
             img{
-                width: 30%;
+                width: 20%;
                 border-radius: 50%;
                 border: 2px solid gray;
             }

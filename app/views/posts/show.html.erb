@@ -46,6 +46,23 @@
     <p><%= @post.content %></p>
   </div>
 
+
+  <% if @post.user == current_user %>
+  <ul class="post-user-options">
+    <li>
+     <%= link_to edit_post_path(@post.id), class: "btn to-post-edit" do %>
+     <span class="far fa-edit"></span>Edit this post 
+     <% end %>
+    </li>
+    <li>
+     <%= button_to post_path(@post.id), class: "btn delete-submit", method: :delete do %>
+     <span class="fas fa-trash-alt"></span>Delete
+     <% end %>
+    </li>
+   </ul>
+
+ <% end %>
+
       <div class="comments">
         <h4>Buddies' Comments</h4>
         <% if @comments %>
@@ -57,24 +74,37 @@
                 <% end %>
               </div>
               <p><%= c.content %></p>
-            
+              
+ 
+
+
+
+
             </div>
           <% end %>
         <% end %>
      </div>
 
-    <div class="comments-form">
-      <%= form_for [@post, @comment] do |f| %>
-        
-         <h4>Leave your comments</h4><br>
-         <%= f.text_area :content, class: "comment-text" %>
-       
-        <%= f.hidden_field :post_id, value: @post.id %> 
-        <br>
-        <%= f.submit 'Submit', class: "btn comment-submit " %>
-      <% end %>
-    </div>
 
+    <% if user_signed_in? %>
+      <div class="comments-form">
+        <%= form_for [@post, @comment] do |f| %>
+          
+          <h4>Leave your comments</h4><br>
+          <%= f.text_area :content, class: "comment-text" %>
+        
+          <%= f.hidden_field :post_id, value: @post.id %> 
+          <br>
+          <%= f.submit 'Submit', class: "btn comment-submit" %>
+        <% end %>
+      </div>
+    <% end %> 
+
+
+    
+      
+
+  
 </div>
 
 

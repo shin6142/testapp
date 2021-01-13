@@ -79,12 +79,12 @@
         <% end %>
 
         <div class="post-user-name">
-        <%= link_to profile_path(post.id) do%>
+        <%= link_to profile_path(post.user.id) do%>
           <h3><%= post.user.name %></h3>
           <% end %>
         </div>
           <div class="post-user-name">
-          <%= link_to profile_path(post.id) do%>
+          <%= link_to profile_path(post.user.id) do%>
           <h4>(<%= post.user.nationallity %>)</h4>
           <% end %>
           </div>

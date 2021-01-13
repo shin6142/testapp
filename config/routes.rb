@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
       }
   resources :posts do
-    resources :comments, only: [:create]
+    resources :comments, only: [:show, :create, :edit, :destroy]
   end 
   resources :profiles, only: [:show, :new, :edit, :create, :update]
   root 'home#top'
